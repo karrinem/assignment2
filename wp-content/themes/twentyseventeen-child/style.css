@@ -1,0 +1,109 @@
+/*
+Theme Name: Her Media Twenty Seventeen Child
+Theme URI: 
+Description: A child theme of Twenty Seventeen
+Author: K Magnussen
+Author URI: www.karrinemagnussen.com
+Template: twentyseventeen
+Version: 0.1.0
+*/
+
+
+
+/* Adjust Header Size */
+
+/*Computer screen */
+@media screen and (min-width: 48em) {
+    .has-header-image.twentyseventeen-front-page .custom-header {
+        height: 30vh;
+        }
+    }
+     
+    /* Mobile screen*/
+    @media screen and (max-width: 48em) {
+    .has-header-image.twentyseventeen-front-page .custom-header
+    {
+        /*display: table;*/
+        /*height: 300px;*/
+        /*height: 75vh;*/
+        height: 30vh;
+        /*width: 100%;*/
+        }
+    }
+     
+    /* Computer screen with logged in user and admin bar showing on front end*/
+    @media screen and (min-width: 48em) {
+        .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-image {
+        /*height: calc(100vh - 32px);*/
+        height: calc(50vh - 32px);
+        }
+    }
+
+
+/* Change Height of Front Page Panels*/
+.panel-image {
+    height: 40vh;
+   }
+   @media screen and (min-width: 48em) {
+    .panel-image {
+     height: 40vh;
+    }
+   }
+
+/* Add space around page content panel*/
+  .home .panel-content .wrap {
+    padding-top: 25px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* Remove Wordpress info */
+.wp-image-87 {
+    
+    border-radius: 8px; }
+    .wp-video-shortcode {border-radius: 8px
+    }
+
+
+
+/* Remove Page Titles */
+    .entry-header
+    {
+        display: none;
+    }
+       
+
+
+
+
+
+
+/* Remove space above title
+#masthead {
+padding-top: 0px !important;
+padding-bottom: 12px !important;
+}*/
+
+/* Adjust Page Width Slightly */
+ 
+@media screen and (min-width: 48em) {
+	.wrap {
+		max-width: 70%;
+		/* padding-left: 3em; */
+		/* padding-right: 3em; */
+	}
+}
+ 
+.page.page-one-column:not(.twentyseventeen-front-page) #primary {
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	max-width: 70%;
+}
+
+@media screen and (min-width: 30em) {
+	.page-one-column .panel-content .wrap
+	{
+		max-width: 55%;
+	}
+}
