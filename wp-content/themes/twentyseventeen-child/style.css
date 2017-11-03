@@ -8,7 +8,52 @@ Template: twentyseventeen
 Version: 0.1.0
 */
 
+/* Fonts */
 
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Devonshire|Parisienne|Redressed');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Raleway|Titillium+Web|Work+Sans:200,300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,400i,500,600,700');
+/* 
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    font-family: 'Redressed', cursive;
+ font-family: 'Cinzel Decorative', cursive;
+
+*/
+
+/* Site Title */
+.site-title {
+    clear: none;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 60px;
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 0.015em;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+
+
+/* Site Description */
+body.has-header-image .site-description, body.has-header-video .site-description {
+    color: #D9F8F8;
+    font-family: 'Raleway:', sans-serif;
+    font-weight: bold;
+    opacity: 0.8;
+}
+/* Adjust Navigation Font and alignment */
+.main-navigation a {
+    display: block;
+    padding: 0.5em 2;
+    text-decoration: none;
+    margin-left: 2em;
+    font-family: 'Raleway:', sans-serif;
+}
 
 /* Adjust Header Size */
 
@@ -39,6 +84,7 @@ Version: 0.1.0
         }
     }
 
+  
 
 /* Change Height of Front Page Panels*/
 .panel-image {
@@ -56,7 +102,11 @@ Version: 0.1.0
     padding-left: 50px;
     padding-right: 50px;
 }
-
+/* Move Content Right to align with Navigatiion Menu */
+.panel-content .wrap {
+    margin-left: 2em;
+ 
+}
 
 /* Remove Wordpress info */
 .wp-image-87 {
@@ -68,7 +118,7 @@ Version: 0.1.0
 
 
 /* Remove Page Titles */
-    .entry-header
+    .entry-header .not.post_class
     {
         display: none;
     }
@@ -101,24 +151,16 @@ padding-bottom: 12px !important;
 		max-width: 55%;
 	}
 }
-/* Footer Styles to incorporate extra footer - created thirds */
 
-.site-footer .widget-column.footer-widget-1 {
-    float: left;
-    display: inline; 
-    width: 33.33%;
-    padding: 5px;
+/* SM Navigation */
+.social-navigation a {
+    background-color: #055B66;
+    width: 40px;
 }
 
-.site-footer .widget-column.footer-widget-2 {
-    float: right;
-    display: inline; 
-    width: 33.33%;
-    padding: 5px;
+.custom-header {
+    position: relative;
+    background-color: #78AAA4;
+
 }
-.site-footer .widget-column.footer-widget-3 {
-    float: right;
-    display: inline; 
-    width: 33.33%;
-    padding: 5px;
-}
+
