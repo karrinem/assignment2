@@ -74,11 +74,6 @@ Version: 0.1.0
     }
        
 
-
-
-
-
-
 /* Remove space above title
 #masthead {
 padding-top: 0px !important;
@@ -94,11 +89,10 @@ padding-bottom: 12px !important;
 		/* padding-right: 3em; */
 	}
 }
- 
-.page.page-one-column:not(.twentyseventeen-front-page) #primary {
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
-	max-width: 70%;
+ /* Content One Column Page Width Adjustment */
+
+.page-one-column .panel-content .wrap {
+    max-width: 80%;
 }
 
 @media screen and (min-width: 30em) {
@@ -106,4 +100,25 @@ padding-bottom: 12px !important;
 	{
 		max-width: 55%;
 	}
+}
+/* Footer Styles to incorporate extra footer - created thirds */
+
+.site-footer .widget-column.footer-widget-1 {
+    float: left;
+    display: inline; 
+    width: 33.33%;
+    padding: 5px;
+}
+
+.site-footer .widget-column.footer-widget-2 {
+    float: right;
+    display: inline; 
+    width: 33.33%;
+    padding: 5px;
+}
+.site-footer .widget-column.footer-widget-3 {
+    float: right;
+    display: inline; 
+    width: 33.33%;
+    padding: 5px;
 }
