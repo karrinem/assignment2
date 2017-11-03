@@ -8,6 +8,25 @@ Template: twentyseventeen
 Version: 0.1.0
 */
 
+/************ Table of Contents ************
+1.0 Fonts
+1.1 Imported Fonts
+1.2 Font Family Info
+
+2.0 Colour Swatches -for informational purpose
+
+3.0 HEADER
+3.1 Adjust Header Size 
+3.2 Computer screen
+3.3 Mobile screen
+3.4 Computer screen logged in user w/ admin bar
+
+3.5 Site Title
+3.1 Site Title Colour
+
+
+
+
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Devonshire|Parisienne|Redressed');
@@ -27,7 +46,39 @@ font-family: 'Redressed', cursive;
 842135 434449   037D96  F5BA0F  726157 5A8752
 */
 
-/* Site Title */
+
+/* 3.0  HEADER  ***********/
+
+/* 3.1 Adjust Header Size */
+
+/*Computer screen */
+@media screen and (min-width: 48em) {
+    .has-header-image.twentyseventeen-front-page .custom-header {
+        height: 40vh;
+        }
+    }
+     
+    /* Mobile screen*/
+    @media screen and (max-width: 48em) {
+    .has-header-image.twentyseventeen-front-page .custom-header
+    {
+        /*display: table;*/
+        /*height: 300px;*/
+        /*height: 75vh;*/
+        height: 40vh;
+        /*width: 100%;*/
+        }
+    }
+     
+    /* Computer screen with logged in user and admin bar showing on front end*/
+    @media screen and (min-width: 48em) {
+        .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-image {
+        /*height: calc(100vh - 32px);*/
+        height: calc(50vh - 32px);
+        }
+    }
+
+/* 3.5 Site Title */
 body.has-header-image .site-title {
     clear: none;
     font-family: 'Cinzel Decorative', cursive;
@@ -55,13 +106,15 @@ body.has-header-image .site-description, body.has-header-video .site-description
     letter-spacing: 0.15em;
     margin-left: 2em;
 }
+
 .has-header-image.twentyseventeen-front-page .site-branding.wrap .has-header-image.home.blog .site-branding.wrap, .wrap {
     bottom: 0;
     display: block;
     margin-left: 2em;
     height: auto;
-    padding-top: 0;
-    position: float: left;;
+    padding-top: 0px;
+    position:;
+    left: 0px;
     width: 100%;
 }
 
@@ -74,36 +127,6 @@ body.has-header-image .site-description, body.has-header-video .site-description
     margin-left: 2em;
     font-family: 'Raleway:', sans-serif;
 }
-
-/* Adjust Header Size */
-
-/*Computer screen */
-@media screen and (min-width: 48em) {
-    .has-header-image.twentyseventeen-front-page .custom-header {
-        height: 30vh;
-        }
-    }
-     
-    /* Mobile screen*/
-    @media screen and (max-width: 48em) {
-    .has-header-image.twentyseventeen-front-page .custom-header
-    {
-        /*display: table;*/
-        /*height: 300px;*/
-        /*height: 75vh;*/
-        height: 30vh;
-        /*width: 100%;*/
-        }
-    }
-     
-    /* Computer screen with logged in user and admin bar showing on front end*/
-    @media screen and (min-width: 48em) {
-        .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-image {
-        /*height: calc(100vh - 32px);*/
-        height: calc(50vh - 32px);
-        }
-    }
-
   
 
 /* Change Height of Front Page Panels*/
