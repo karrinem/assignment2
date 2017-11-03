@@ -19,15 +19,19 @@ font-family: 'Parisienne', cursive;
 font-family: 'Raleway', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 font-family: 'Work Sans', sans-serif;
-    font-family: 'Redressed', cursive;
+font-family: 'Redressed', cursive;
  font-family: 'Cinzel Decorative', cursive;
+*/
 
+/* colour swatch 
+842135 434449   037D96  F5BA0F  726157 5A8752
 */
 
 /* Site Title */
-.site-title {
+body.has-header-image .site-title {
     clear: none;
     font-family: 'Cinzel Decorative', cursive;
+    color: #0F0F0F;
     font-size: 60px;
     font-size: 3rem;
     line-height: 1.25;
@@ -38,14 +42,30 @@ font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
 }
 
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+    color: #0F0F0F;
+}
+
 
 /* Site Description */
 body.has-header-image .site-description, body.has-header-video .site-description {
-    color: #D9F8F8;
+    color: #0F0F0F;
     font-family: 'Raleway:', sans-serif;
-    font-weight: bold;
-    opacity: 0.8;
+    font-weight: medium;
+    letter-spacing: 0.15em;
+    margin-left: 2em;
 }
+.has-header-image.twentyseventeen-front-page .site-branding.wrap .has-header-image.home.blog .site-branding.wrap, .wrap {
+    bottom: 0;
+    display: block;
+    margin-left: 2em;
+    height: auto;
+    padding-top: 0;
+    position: float: left;;
+    width: 100%;
+}
+
+
 /* Adjust Navigation Font and alignment */
 .main-navigation a {
     display: block;
@@ -157,10 +177,3 @@ padding-bottom: 12px !important;
     background-color: #055B66;
     width: 40px;
 }
-
-.custom-header {
-    position: relative;
-    background-color: #78AAA4;
-
-}
-
