@@ -115,11 +115,12 @@ body.has-header-image .site-title, body.has-header-video .site-title, body.has-h
 
 /* 3.7 ******** Site Description ************/
 body.has-header-image .site-description, body.has-header-video .site-description {
-    color: #0F0F0F;
+    color:  #C4E0E6;
     font-family: 'Raleway:', sans-serif;
     font-weight: medium;
     letter-spacing: 0.15em;
     margin-left: 2em;
+    text-shadow: .5px .5px #0F0F0F; 
 }
 
 .has-header-image.twentyseventeen-front-page .site-branding.wrap .has-header-image.home.blog .site-branding.wrap, .wrap {
@@ -133,6 +134,26 @@ body.has-header-image .site-description, body.has-header-video .site-description
     width: 100%;
 }
 
+/*** NAVIGATION BAR *****************/
+
+.navigation-top {
+    background: #037D96    !important;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    font-size: 16px;
+    font-size: 1rem;
+    position: relative;
+}
+.navigation-top a {
+    color: #222;
+    font-weight: 600;
+}
+.navigation-top a:hover {
+    color: #F5EEEE;
+}
+.navigation-top a:active {
+    color: #C3E0E6 !important;
+}
 
 /* Adjust Navigation Font and alignment */
 .main-navigation a {
@@ -176,6 +197,7 @@ body.has-header-image .site-description, body.has-header-video .site-description
 /* Page Titles - remove white space below********/
 .site-content {
     padding-top: 1em;
+    padding-top: 1em;
 }
 .page-header {
     padding-bottom: 0;
@@ -187,6 +209,8 @@ body.has-header-image .site-description, body.has-header-video .site-description
         margin-bottom: 0px !important;
     }
 }
+
+/*  CONTENT PAGES ****************************/
 
  /* Content One Column Page Width Adjustment */
 
@@ -200,6 +224,15 @@ body.has-header-image .site-description, body.has-header-video .site-description
         max-width: 80%;
 	}
 }
+/* image corners */
+.entry-content img {
+border-radius: 5px;
+}
+/* Conetent Bullet alignment ***********************
+
+entry-content ol, .entry-content ul {list-style-position: inside;}
+*/
+
 
 /* Icon */
 .icon {
@@ -213,28 +246,12 @@ body.has-header-image .site-description, body.has-header-video .site-description
 }
 
 
+/** FOOTER  ***********************/
 
 /* Remove Wordpress info */
 .site-info { display: none; }
 
-.navigation-top {
-    background: #037D96    !important;
-    border-bottom: 1px solid #eee;
-    border-top: 1px solid #eee;
-    font-size: 16px;
-    font-size: 1rem;
-    position: relative;
-}
-.navigation-top a {
-    color: #222;
-    font-weight: 600;
-}
-.navigation-top a:hover {
-    color: #F5EEEE;
-}
-.navigation-top a:active {
-    color: #C3E0E6 !important;
-}
+
 
 /* SM Navigation */
 .social-navigation a {
@@ -245,5 +262,29 @@ body.has-header-image .site-description, body.has-header-video .site-description
     
     background-color: #721F35;
     width: 40px;  
+}
+/* Footer Background 
+.site-footer {background: #AAC300; position:relative; z-index:9999;}
+*/
+
+/* Adjust Footer widths to make 1 2 eqhal width */
+/* Footer 1 content */
+.site-footer .widget-column.footer-widget-1 {
+    /* float: left; */
+    width: 47%;
+}
+
+/* Footer 2 content */
+.site-footer .widget-column.footer-widget-2 {
+    /* float: right; */
+    width: 47%;
+}
+
+/* Social icons */
+.social-navigation {
+    /* clear: left; */
+    /* float: left; */
+    /* margin-bottom: 0; */
+    width: 47%;
 }
 
