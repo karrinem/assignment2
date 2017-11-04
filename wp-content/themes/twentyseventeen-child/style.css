@@ -22,7 +22,8 @@ Version: 0.1.0
 3.4 Computer screen logged in user w/ admin bar
 
 3.5 Site Title
-3.1 Site Title Colour
+3.6 Site Title Colour
+3.7 Site Description
 
 
 
@@ -43,7 +44,7 @@ font-family: 'Redressed', cursive;
 */
 
 /* colour swatch 
-842135 434449   037D96  F5BA0F  726157 5A8752
+842135 434449   037D96  F5BA0F  726157 5A8752 721F35
 */
 
 
@@ -78,11 +79,24 @@ font-family: 'Redressed', cursive;
         }
     }
 
-/* 3.5 Site Title */
+    /* reduces space between Menu and content */
+
+.site-content {
+    padding-top: 1em;
+    }
+    
+    .page-header {
+    padding-bottom: 0;
+    }
+    .custom-header {
+    margin-bottom: 0px !important; 
+    padding-bottom: 0;
+    }
+
+/* 3.5 *********Site Title *********************/
 body.has-header-image .site-title {
     clear: none;
     font-family: 'Cinzel Decorative', cursive;
-    color: #0F0F0F;
     font-size: 60px;
     font-size: 3rem;
     line-height: 1.25;
@@ -92,13 +106,14 @@ body.has-header-image .site-title {
     padding-top: 0px;
     text-transform: uppercase;
 }
-
+/* 3.6  ******Site Title Color *************/
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
-    color: #0F0F0F;
+    color:#037D96;
+    text-shadow: 1px 1px #C4E0E6;
 }
 
 
-/* Site Description */
+/* 3.7 ******** Site Description ************/
 body.has-header-image .site-description, body.has-header-video .site-description {
     color: #0F0F0F;
     font-family: 'Raleway:', sans-serif;
@@ -151,37 +166,28 @@ body.has-header-image .site-description, body.has-header-video .site-description
  
 }
 
-/* Remove Wordpress info */
-.wp-image-87 {
-    
-    border-radius: 8px; }
-    .wp-video-shortcode {border-radius: 8px
-    }
-
-
-
-/* Remove Page Titles */
-    .entry-header .not.post_class
-    {
-        display: none;
-    }
-       
-
-/* Remove space above title
-#masthead {
-padding-top: 0px !important;
-padding-bottom: 12px !important;
-}*/
-
-/* Adjust Page Width Slightly */
- 
-@media screen and (min-width: 48em) {
-	.wrap {
-		max-width: 70%;
-		/* padding-left: 3em; */
-		/* padding-right: 3em; */
-	}
+/* Page Titles */
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+    color: #222;
+    font-size: 14px;
+    font-size: 1.4rem !important;
 }
+
+/* Page Titles - remove white space below********/
+.site-content {
+    padding-top: 1em;
+}
+.page-header {
+    padding-bottom: 0;
+}
+@media screen and (min-width: 15em) {
+    .page.page-one-column .entry-header, 
+    .twentyseventeen-front-page.page-one-column .entry-header, 
+    .archive.page-one-column:not(.has-sidebar) .page-header {
+        margin-bottom: 0px !important;
+    }
+}
+
  /* Content One Column Page Width Adjustment */
 
 .page-one-column .panel-content .wrap {
@@ -191,12 +197,53 @@ padding-bottom: 12px !important;
 @media screen and (min-width: 30em) {
 	.page-one-column .panel-content .wrap
 	{
-		max-width: 55%;
+        max-width: 80%;
 	}
+}
+
+/* Icon */
+.icon {
+    display: inline-block;
+    fill: #921818;
+    height: 1em;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+
+
+/* Remove Wordpress info */
+.site-info { display: none; }
+
+.navigation-top {
+    background: #037D96    !important;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    font-size: 16px;
+    font-size: 1rem;
+    position: relative;
+}
+.navigation-top a {
+    color: #222;
+    font-weight: 600;
+}
+.navigation-top a:hover {
+    color: #F5EEEE;
+}
+.navigation-top a:active {
+    color: #C3E0E6 !important;
 }
 
 /* SM Navigation */
 .social-navigation a {
-    background-color: #055B66;
+    background-color: #037D96 ;
     width: 40px;
 }
+.social-navigation a:hover {
+    
+    background-color: #721F35;
+    width: 40px;  
+}
+
