@@ -33,5 +33,7 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 			</div>
 		<?php } ?>
 	</aside><!-- .widget-area -->
+	
 
 <?php endif; ?>
+mmmm

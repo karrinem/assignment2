@@ -253,7 +253,7 @@ entry-content ol, .entry-content ul {list-style-position: inside;}
 
 
 
-/* SM Navigation */
+/* SM Navigation  and icons */
 .social-navigation a {
     background-color: #037D96 ;
     width: 40px;
@@ -263,9 +263,10 @@ entry-content ol, .entry-content ul {list-style-position: inside;}
     background-color: #721F35;
     width: 40px;  
 }
-/* Footer Background 
-.site-footer {background: #AAC300; position:relative; z-index:9999;}
-*/
+
+.social-navigation {
+    width: 47%;
+}
 
 /* Adjust Footer widths to make 1 2 eqhal width */
 /* Footer 1 content */
@@ -280,11 +281,12 @@ entry-content ol, .entry-content ul {list-style-position: inside;}
     width: 47%;
 }
 
-/* Social icons */
-.social-navigation {
-    /* clear: left; */
-    /* float: left; */
-    /* margin-bottom: 0; */
-    width: 47%;
-}
 
+/* Footer Background 
+.site-footer {background: #AAC300; position:relative; z-index:9999;}
+*/
+
+/*remove footer widgets from front page */
+.twentyseventeen-front-page .site-footer .widget-area {
+    display: none !important;
+    }

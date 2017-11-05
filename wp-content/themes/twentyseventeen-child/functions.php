@@ -18,3 +18,12 @@ register_sidebar( array(
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 ) );
+
+/*
+ Add more sections to the front page sliders
+ */
+ function wpc_custom_front_sections( $num_sections )
+ {
+	 return 5; //Change this number to change the number of the sections.
+ }
+add_filter( 'twentyseventeen_front_page_sections', 'wpc_custom_front_sections' );
