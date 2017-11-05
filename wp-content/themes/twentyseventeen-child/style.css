@@ -15,25 +15,55 @@ Version: 0.1.0
 
 2.0 Colour Swatches -for informational purpose
 
-3.0 HEADER
+3.0 HEADER IMAGE
 3.1 Adjust Header Size 
 3.2 Computer screen
 3.3 Mobile screen
 3.4 Computer screen logged in user w/ admin bar
 
-3.5 Site Title
-3.6 Site Title Colour
-3.7 Site Description
+4.0 SITE TITLE DESCRIPTION
+4.1 Site Title Adjustments
+4.2 Site Title Colour
+4.3 Site Title Adjustments
+4.3 Site Title Colour
+
+5.0 MAIN NAVIGATION
+5.1 Nav Bar Link Colours 
+5.2 Adjust Nav Font and Alignment
+5.3 Reduce Space Between Nav Menu and Content 
+
+6.0 FRONT PAGE PANELS
+6.1 Change Height of Front Page Panels
+
+7.0 PAGE CONTENT PANEL
+7.1 Add Space Around Page Content Panel
+7.2 Move Content Right to Align With Navigatiion Menu
+7.3 Page Titles 
+7.4 Remove White Space Below Titles
+7.5 Content One Column Page Width Adjustment
+7.6 Content Image Corners
+7.7 Content Bullet Alignment
+
+8.0 ICONS
+8.1 Icon Colours
+
+9.0 FOOTER
+9.1 Site Info
+9.2 SM Navigation and Icons
+9.3 Footer Widgets 
+*/
+
+ 
 
 
-
-
-/* Fonts */
+/* 1.0 *********** FONTS ***********/
+/* 5.1 Import Google Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Devonshire|Parisienne|Redressed');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Raleway|Titillium+Web|Work+Sans:200,300,400,500,600');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,400i,500,600,700');
-/* 
+
+/* 1.2 Font Family Info /* 
 font-family: 'Berkshire Swash', cursive;
 font-family: 'Parisienne', cursive;
 font-family: 'Raleway', sans-serif;
@@ -43,12 +73,13 @@ font-family: 'Redressed', cursive;
  font-family: 'Cinzel Decorative', cursive;
 */
 
+/* 2.0 ***********  COLOUR SWATCHES ***********/
 /* colour swatch 
 842135 434449   037D96  F5BA0F  726157 5A8752 721F35
 */
 
 
-/* 3.0  HEADER  ***********/
+/*3.0 ***********  HEADER  ***********/
 
 /* 3.1 Adjust Header Size */
 
@@ -58,7 +89,7 @@ font-family: 'Redressed', cursive;
         height: 40vh;
         }
     }
-     
+
     /* Mobile screen*/
     @media screen and (max-width: 48em) {
     .has-header-image.twentyseventeen-front-page .custom-header
@@ -69,9 +100,9 @@ font-family: 'Redressed', cursive;
         height: 40vh;
         /*width: 100%;*/
         }
-    }
-     
-    /* Computer screen with logged in user and admin bar showing on front end*/
+    }   
+
+/* Computer screen with logged in user and admin bar showing on front end*/
     @media screen and (min-width: 48em) {
         .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-image {
         /*height: calc(100vh - 32px);*/
@@ -79,21 +110,20 @@ font-family: 'Redressed', cursive;
         }
     }
 
-    /* reduces space between Menu and content */
-
-.site-content {
-    padding-top: 1em;
-    }
-    
-    .page-header {
-    padding-bottom: 0;
-    }
-    .custom-header {
-    margin-bottom: 0px !important; 
-    padding-bottom: 0;
+    .has-header-image.twentyseventeen-front-page .site-branding.wrap .has-header-image.home.blog .site-branding.wrap, .wrap {
+        bottom: 0;
+        display: block;
+        margin-left: 2em;
+        height: auto;
+        padding-top: 0px;
+        position:;
+        left: 0px;
+        width: 100%;
     }
 
-/* 3.5 *********Site Title *********************/
+/* 4.0 ***********  SITE TITLE DESCRIPTION  ***********/
+/* 4.1 Site Title  */
+
 body.has-header-image .site-title {
     clear: none;
     font-family: 'Cinzel Decorative', cursive;
@@ -106,14 +136,14 @@ body.has-header-image .site-title {
     padding-top: 0px;
     text-transform: uppercase;
 }
-/* 3.6  ******Site Title Color *************/
+/* 4.2 Site Title Colour */  
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
     color:#037D96;
     text-shadow: 1px 1px #C4E0E6;
 }
 
 
-/* 3.7 ******** Site Description ************/
+/* 4.3 Site Title Description */
 body.has-header-image .site-description, body.has-header-video .site-description {
     color:  #C4E0E6;
     font-family: 'Raleway:', sans-serif;
@@ -134,8 +164,10 @@ body.has-header-image .site-description, body.has-header-video .site-description
     width: 100%;
 }
 
-/*** NAVIGATION BAR *****************/
 
+/* 5.0 ***********  MAIN NAVIGATION ***********/
+
+/* 5.1 Nav Bar Link Colours */
 .navigation-top {
     background: #037D96    !important;
     border-bottom: 1px solid #eee;
@@ -151,11 +183,11 @@ body.has-header-image .site-description, body.has-header-video .site-description
 .navigation-top a:hover {
     color: #F5EEEE;
 }
-.navigation-top a:active {
+.navigation-top .current-menu-item a {
     color: #C3E0E6 !important;
 }
 
-/* Adjust Navigation Font and alignment */
+/* 5.2 Adjust Nav Font and Alignment */
 .main-navigation a {
     display: block;
     padding: 0.5em 2;
@@ -163,9 +195,23 @@ body.has-header-image .site-description, body.has-header-video .site-description
     margin-left: 2em;
     font-family: 'Raleway:', sans-serif;
 }
-  
 
-/* Change Height of Front Page Panels*/
+/* 5.3 Reduce Space Between Nav Menu and Content */
+    .site-content {
+        padding-top: 1em;
+        }
+        
+        .page-header {
+        padding-bottom: 0;
+        }
+        .custom-header {
+        margin-bottom: 0px !important; 
+        padding-bottom: 0;
+        }
+
+/* 6.0 ***********  FRONT PAGE PANELS ***********/
+/* 6.1 Change Height of Front Page Panels */
+
 .panel-image {
     height: 40vh;
    }
@@ -175,26 +221,29 @@ body.has-header-image .site-description, body.has-header-video .site-description
     }
    }
 
-/* Add space around page content panel*/
+/* 7.0 ***********  PAGE CONTENT PANEL ***********/
+
+/* 7.1 Add Space Around Page Content Panel */
   .home .panel-content .wrap {
     padding-top: 25px !important;
     padding-left: 50px;
     padding-right: 50px;
 }
-/* Move Content Right to align with Navigatiion Menu */
+
+/* 7.2 Move Content Right to Align With Navigatiion Menu */
 .panel-content .wrap {
     margin-left: 2em;
  
 }
 
-/* Page Titles */
+/* 7.3 Page Titles */
 .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
     color: #222;
     font-size: 14px;
     font-size: 1.4rem !important;
 }
 
-/* Page Titles - remove white space below********/
+/* 7.4 Remove White Space Below Titles */
 .site-content {
     padding-top: 1em;
     padding-top: 1em;
@@ -210,9 +259,7 @@ body.has-header-image .site-description, body.has-header-video .site-description
     }
 }
 
-/*  CONTENT PAGES ****************************/
-
- /* Content One Column Page Width Adjustment */
+ /* 7.5 Content One Column Page Width Adjustment */
 
 .page-one-column .panel-content .wrap {
     max-width: 80%;
@@ -224,36 +271,34 @@ body.has-header-image .site-description, body.has-header-video .site-description
         max-width: 80%;
 	}
 }
-/* image corners */
-.entry-content img {
-border-radius: 5px;
-}
-/* Conetent Bullet alignment ***********************
 
+/* 7.6 Content Image Corners */
+    .entry-content img {
+    border-radius: 5px;
+        }
+
+/* 7.7 Content Bullet Alignment */
+/* 
 entry-content ol, .entry-content ul {list-style-position: inside;}
 */
 
-
-/* Icon */
-.icon {
+/** 8.0 ICONS ***********************/
+/* 8.1 Icon Colours */
+    .icon {
     display: inline-block;
     fill: #921818;
-    height: 1em;
-    position: relative;
-    top: -0.0625em;
-    vertical-align: middle;
-    width: 1em;
-}
+        }
 
+/** 9.0 FOOTER  ***********************/
 
-/** FOOTER  ***********************/
-
-/* Remove Wordpress info */
-.site-info { display: none; }
+/* 9.1 Site Info */
+.site-info {
+     margin: 0px !important; }
 
 
 
-/* SM Navigation  and icons */
+/* 9.2 SM Navigation and Icons */
+
 .social-navigation a {
     background-color: #037D96 ;
     width: 40px;
@@ -268,7 +313,10 @@ entry-content ol, .entry-content ul {list-style-position: inside;}
     width: 47%;
 }
 
+/* 9.3 Footer Widgets */
+
 /* Adjust Footer widths to make 1 2 eqhal width */
+
 /* Footer 1 content */
 .site-footer .widget-column.footer-widget-1 {
     /* float: left; */
@@ -281,12 +329,9 @@ entry-content ol, .entry-content ul {list-style-position: inside;}
     width: 47%;
 }
 
-
-/* Footer Background 
-.site-footer {background: #AAC300; position:relative; z-index:9999;}
-*/
-
 /*remove footer widgets from front page */
 .twentyseventeen-front-page .site-footer .widget-area {
     display: none !important;
     }
+
+
